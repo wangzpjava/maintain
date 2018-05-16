@@ -1,0 +1,39 @@
+$home_menu_background = #028BAD
+
+transform($x, $y, $deg)
+  -webkit-transform: scale($x, $y) rotate($deg)
+  -moz-transform: scale($x, $y) rotate($deg)
+  -ms-transform: scale($x, $y) rotate($deg)
+  -o-transform: scale($x, $y) rotate($deg)
+  transform: scale($x, $y) rotate($deg)
+
+transition($time)
+  -webkit-transition: all $time
+  -moz-transition: all $time
+  -ms-transition: all $time
+  -o-transition: all $time
+  transition: all $time
+
+responsive()
+  @media screen and (min-width 1200px)
+    width 1200px
+    margin 0 auto
+
+placeholder($fontSize, $color)
+  &::-webkit-input-placeholder
+    font-size $fontSize
+    color $color
+  &:-moz-placeholder
+    font-size $fontSize
+    color $color
+  &::-moz-placeholder
+    font-size $fontSize
+    color $color
+  &:-ms-input-placeholder
+    font-size $fontSize
+    color $color
+
+.home-wrapper-common
+  @media screen and (min-width 1200px)
+    width 1200px
+    margin 0 auto

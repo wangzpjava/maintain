@@ -1,0 +1,97 @@
+.ins-guide-card
+  border: 1px solid #dddee1;
+  position relative
+  box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.05);
+  &:hover
+    border 1px solid #8590a6
+  .line
+    position: absolute
+    left 0
+    top 0
+    background-color #80C5D6
+    width 86px
+    height 80px
+  .data-top
+    position: relative
+    z-index 1
+    margin 8px 22px 6px 8px
+    background-color #ffffff
+    .content-wrapper
+      padding 8px 0 0 12px
+      display flex
+      .ins-img
+        flex 1
+        height 160px
+        .img-link
+          height 140px
+          width 140px
+          margin 10px 0 0 10px
+          &.left-right
+            height 220px
+            width 200px
+      .property
+        flex 4
+        padding-left 20px
+        .head-text
+          border-bottom: 1px solid #A6A8AB;
+          padding-bottom 15px
+          position: relative
+          font-family: PingFangSC-Medium;
+          color: #028BAD;
+          letter-spacing: 0;
+          .name
+            font-size: 22px;
+            cursor pointer
+          .open
+            position: absolute
+            right 0
+            top 5px
+            font-size: 14px;
+            cursor pointer
+        .des-text
+          padding-top 15px
+          .des
+            margin-bottom 10px
+            font-size: 12px;
+            letter-spacing: 0;
+            .left
+              color: #028BAD
+              font-family: PingFangSC-Semibold;
+            .right
+              font-family: PingFangSC-Medium;
+              color: #415065;
+  .data-content
+    margin 0 22px 11px 20px
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #415065;
+    letter-spacing: 0;
+    line-height: 20px;
+    overflow: hidden;
+    height: 70px;
+    padding: 6px 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    position: relative;
+    &.left-right
+      margin: 0 22px 11px 0;
+    &::after
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+      display: block;
+      width: 160px;
+      height: 20px;
+      content: '';
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 96%);
+  .data-footer
+    margin 0 22px 20px 20px
+    text-align right
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    .cancel-collect
+      color: #EB8B1F;
+      border-color: #EB8B1F;
+    button
+      margin-left 10px

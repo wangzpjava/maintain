@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="DEBUG" monitorInterval="30">
+    <properties>
+        <property name="LOG_HOME">logs</property>
+        <property name="LOG_NAME">instrument</property>
+        <property name="PATTERN_LOG">%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %t %-5level [instrument] %logger{1.} %L --- %msg%n}{%throwable{short.fileName}}{FATAL=white,ERROR=red, WARN=blue, INFO=black, DEBUG=green, TRACE=blue}</property>
+    </properties>
+    <appenders>
+        <RollingFile name="RollingFileError" fileName="${LOG_HOME}/${LOG_NAME}-error.log"
+                     filePattern="${LOG_HOME}/${LOG_NAME}-error-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout pattern="${PATTERN_LOG}"/>
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="500 MB" />
+            </Policies>
+        </RollingFile>
+        <RollingFile name="RollingFile" fileName="${LOG_HOME}/${LOG_NAME}.log"
+                     filePattern="${LOG_HOME}/${LOG_NAME}-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout pattern="${PATTERN_LOG}"/>
+            <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="24" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="500 MB" />
+            </Policies>
+        </RollingFile>
+    </appenders>
+    <loggers>
+        <Logger name="org.apache" level="error" />
+        <Logger name="org.springframework" level="info" />
+        <Logger name="com.alibaba" level="warn"/>
+        <root level="INFO">
+            <appender-ref ref="RollingFileError"/>
+            <appender-ref ref="RollingFile"/>
+        </root>
+    </loggers>
+</configuration>

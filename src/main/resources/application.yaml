@@ -1,0 +1,36 @@
+server:
+    port: 8888
+    compression:
+        enabled: true
+        mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    servlet:
+      context-path: /frontend-app
+logging:
+  config: classpath:log4j2.xml
+  level:
+    com: info
+    com.maintian: debug
+
+spring:
+  application.name: maintian
+  profiles.active: dev
+  datasource:
+    #数据库配置
+    url: jdbc:mysql://localhost:3306/maintian?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    #连接池配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 20
+    minIdle: 20
+    maxActive: 50
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    filters: stat,wall,slf4j
+    logSlowSql: true
+    testOnBorrow: false
+    testOnReturn: false
+    testWhileIdle: true
+    validationQuery: SELECT 1;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <!--<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[0] %>">-->
+    <link rel="stylesheet" type="text/css" href="https://s3.cn-north-1.amazonaws.com.cn/instrument-cdn/iview-2.8.0/styles/iview.css">
+
+    <script type="text/javascript" src="https://s3.cn-north-1.amazonaws.com.cn/instrument-cdn/vue-2.5.16/vue.min.js"></script>
+    <script type="text/javascript" src="https://s3.cn-north-1.amazonaws.com.cn/instrument-cdn/iview-2.8.0/iview.min.js"></script>
+    <script type="text/javascript" src="https://s3.cn-north-1.amazonaws.com.cn/instrument-cdn/moment-2.22.0/moment.min.js"></script>
+</head>
+
+<body>
+<div id="app"></div>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[0] %>"></script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[1] %>"></script>
+<script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[2] %>"></script>
+</body>
+
+</html>

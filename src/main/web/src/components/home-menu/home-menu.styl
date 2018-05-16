@@ -1,0 +1,51 @@
+@import "../../commons/style/common.styl"
+.home-menu-wrapper
+  background-color $home_menu_background
+  height 88px
+  .menu-content
+    text-align center
+    responsive()
+    display flex
+    line-height 88px
+    width 100%
+    color #ffffff
+    font-family: PingFangSC-Medium;
+    font-size 1.125rem
+    font-weight 400
+    margin 0
+    @media (max-width 768px)
+      font-size 16px
+    .ins-logo
+      flex 1
+      text-align left
+      .img
+        height -webkit-fill-available
+    .menu-tab
+      position relative
+      text-align center
+      margin 0 35px
+      cursor pointer
+      &::after
+        position: absolute;
+        left 50%
+        bottom: 44px;
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color #ffffff
+        content: '';
+        transition(0.3s)
+      &.chose::after
+        position: absolute;
+        left 0
+        width: 100%;
+      &:hover::after
+        left 0
+        width: 100%;
+    .ins-personal
+      cursor pointer
+      margin 0 35px
+      .ivu-dropdown
+        .ivu-dropdown-rel
+          a
+            color #ffff
