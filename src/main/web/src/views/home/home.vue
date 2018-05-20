@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ins-home-menu></ins-home-menu>
+    <main-home-menu></main-home-menu>
+    <div class="home-wrapper-common">
+      <router-view></router-view>
+    </div>
+    <main-home-footer></main-home-footer>
   </div>
 </template>
 

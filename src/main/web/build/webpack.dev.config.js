@@ -31,7 +31,7 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       title: 'maintian' + package.version,
       filename: '../index.html',
-      template: './src/template/index.ejs',
+      // template: './src/template/index.ejs',
       inject: false
     }),
     new CopyWebpackPlugin(

@@ -4,7 +4,7 @@
       <div class="ins-logo">
         <img src="../../img/logo.png" class="img">
       </div>
-      <div class="menu-tab" @click="changeMenu(index)" :class="{'chose':menuType===index}" v-for="(m,index) in menu">
+      <div class="menu-tab" @click="changeMenu(index)" :class="{'chose':menuType === index}" v-for="(m,index) in menu">
         <span>{{m}}</span>
       </div>
       <div class="ins-personal">

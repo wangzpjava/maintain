@@ -49,7 +49,7 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       title: 'Instrument',// + package.version,
       filename: '../index.html',
-      template: './src/template/index.ejs',
+      // template: './src/template/index.ejs',
       inject: false
     })
   ],

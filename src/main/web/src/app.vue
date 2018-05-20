@@ -4,10 +4,6 @@
       <div class="top">返回顶端</div>
     </BackTop>
     <router-view></router-view>
-    <footer class="footer">
-      Copyright ©2017 All Rights Reserved.
-      <a href="http://www.miitbeian.gov.cn" target="_blank">备案号</a>
-    </footer>
   </div>
 </template>
 
