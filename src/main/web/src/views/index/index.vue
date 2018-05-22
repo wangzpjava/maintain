@@ -1,5 +1,8 @@
 <template>
  <div class="index-div">
+   <div>
+     <img src="../../img/banner.jpg" class="img">
+   </div>
    <table width="1002" border="0" align="center" cellpadding="0" cellspacing="0">
      <tr>
        <td width="532" align="center">

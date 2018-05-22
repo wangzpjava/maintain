@@ -11,9 +11,6 @@
 
       </div>
     </div>
-      <div class="ins-banner">
-        <img src="../../img/banner.jpg" class="img">
-      </div>
   </div>
 </template>
 
