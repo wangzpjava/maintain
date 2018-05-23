@@ -29,11 +29,10 @@
    </table>
  </div>
 </template>
-
 <script type="text/ecmascript-6">
-
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import "index.styl";
+  body{height:auto; padding: 0 0 100px;}
 </style>
