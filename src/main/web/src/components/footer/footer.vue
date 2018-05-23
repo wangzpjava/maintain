@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
     <p><b>芜湖万和热水器维修中心</b></p>
-    <p><b>主营项目 : </b><font class="foot-red">芜湖空调维修,芜湖热水器维修,芜湖洗衣机维修</font></p>
-    <p class="foot-p-3">
+    <p><b>主营项目 : </b><font>芜湖空调维修,芜湖热水器维修,芜湖洗衣机维修</font></p>
+    <p>
       <span>联系人：客服人员400-000-0000</span>
       <span>电话：0553-88888888</span>
       <span>邮箱：<a href="mailto:"></a></span>
