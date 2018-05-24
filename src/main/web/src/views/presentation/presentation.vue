@@ -1,5 +1,7 @@
 <template>
   <div class="presentation">
+   <img src="../../img/quick.jpg" style="width: 1000px;margin-top: -20px"/>
+   <br/>
     <img src="../../img/1.jpg"/>
     <img src="../../img/2.jpg"/>
     <img src="../../img/3.jpg"/>

@@ -1,6 +1,7 @@
 <template>
-  <div style="margin-left: 20%; margin-top: 5%; margin-right: 20%">
-    <div class="contact-us">
+  <div style="margin-left: 20%; margin-top: 3%; margin-right: 20%">
+  	<img src="../../img/维修.jpg" style="width: 1000px;margin-top: -40px"/>
+    <div class="contact-us" style="margin-left:30px">
       <h3 style="font-family: 宋体">热水器维修</h3>
       <p>安徽芜湖办事处</p>
       <p>电　话：400-8888-888</p>
