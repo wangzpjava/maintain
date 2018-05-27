@@ -20,9 +20,9 @@
     name: 'home-menu',
     data () {
       return {
-        menu: ['网站首页', '关于我们', '维修常识', '服务中心', '案例展示', '联系我们'],
+        menu: ['网站首页', '关于我们', '维修常识', '案例展示', '联系我们'],
         menuType: 0,
-        menuRouterName: ['home-page', 'about-us', 'maintenance-knowledge', 'service-center', 'case-presentation', 'contact-us']
+        menuRouterName: ['home-page', 'about-us', 'maintenance-knowledge', 'case-presentation', 'contact-us']
       }
     },
     computed: mapGetters({

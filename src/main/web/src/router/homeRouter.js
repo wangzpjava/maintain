@@ -31,14 +31,6 @@ export const home_router = [
         }
       },
       {
-        path: 'service-center',
-        name: 'service-center',
-        title: '服务中心',
-        component: resolve => {
-          require(['../views/service-center/service-center.vue'], resolve);
-        }
-      },
-      {
         path: 'presentation',
         name: 'case-presentation',
         title: '案例展示',
