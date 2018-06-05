@@ -18,7 +18,7 @@ fs.open('./build/env.js', 'w', function (err, fd) { //这里路径应该是以pa
 
 module.exports = merge(webpackBaseConfig, {
   output: {
-    publicPath: '/frontend-app/dist/',  // 修改为你的服务器域名
+    publicPath: '/dist/',  // 修改为你的服务器域名
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].chunk.js'
   },
