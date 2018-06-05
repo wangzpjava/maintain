@@ -1,8 +1,8 @@
 <template>
   <div id="main" class="app-main">
-    <BackTop :height="100" :bottom="20" style="z-index: 1000;">
-      <div class="top">返回顶端</div>
-    </BackTop>
+    <!--<BackTop :height="100" :bottom="20" style="z-index: 1000;">-->
+      <!--<div class="top">返回顶端</div>-->
+    <!--</BackTop>-->
     <router-view></router-view>
   </div>
 </template>

@@ -47,15 +47,15 @@ module.exports = merge(webpackBaseConfig, {
       }
     }),
     new HtmlWebpackPlugin({
-      title: 'Instrument',// + package.version,
+      title: 'maintian',// + package.version,
       filename: '../index.html',
-      // template: './src/template/index.ejs',
+      template: './src/template/index.ejs',
       inject: false
     })
   ],
   externals:{ //避免以下组件打包进组件库
-    'vue': 'Vue',
-    'iview': 'iview',
-    'moment': 'moment'
+    // 'vue': 'Vue',
+    // 'iview': 'iview',
+    // 'moment': 'moment'
   }
 });

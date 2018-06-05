@@ -1,4 +1,4 @@
-import * as category from '../api/instrumentApi'
+import * as category from '../api/maintainApi'
 import * as http from '../axiosConfig'
 
 // 这个也是可以直接调用的:this.$store.state.category.categoryCascader, category为这个文件在store中注册的缓存的key

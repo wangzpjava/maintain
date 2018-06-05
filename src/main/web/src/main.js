@@ -6,6 +6,7 @@ import App from './app.vue'
 import {axiosUse} from './axiosConfig.js'
 // import {directivesInit} from '../src/directives/directives-init'
 import {componentInit} from '../src/components/componentInit.js'
+import "iview/dist/styles/iview.css"
 
 axiosUse(Vue)
 Vue.use(iView)

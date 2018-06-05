@@ -1,4 +1,4 @@
-import * as currentApi from '../api/instrumentApi'
+import * as currentApi from '../api/maintainApi'
 import * as http from '../axiosConfig'
 import Cookies from 'js-cookie'
 

@@ -2,10 +2,7 @@
   <div style="margin-left: 20%; margin-top: 3%; margin-right: 20%">
   	<img src="../../img/维修.jpg" style="width: 1000px;margin-top: -40px"/>
     <div class="contact-us" style="margin-left:30px">
-      <h3 style="font-family: 宋体">热水器维修</h3>
-      <p>芜湖市九华中路126号</p>
-      <p>联系人：章经理</p>
-      <p>手　机：13605531910</p>
+      <h2 style="font-family: 宋体;">7*24小时报修热线:13605531910</h2>
     </div>
     <h3>第一步：拨打维修中心服务电话</h3>
     &emsp;我们的服务遍及全市，各区都有分点，提供上门服务，郊区也仅仅收取适当的上门费，
